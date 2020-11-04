@@ -1,4 +1,4 @@
-[![Alt text]()](https://www.youtube.com/watch?v=5VPzuGRjuuQ&ab_channel=LORDFRIEZA)
+[![Click here to view this project demostration]()](https://www.youtube.com/watch?v=5VPzuGRjuuQ&ab_channel=LORDFRIEZA)
 
 
 # Getting Started with Create React App
