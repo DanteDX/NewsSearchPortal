@@ -1,0 +1,85 @@
+body{
+    background-color: #29435c;
+    margin:0px;
+    padding:0px;
+}
+
+
+.eachNews{
+    padding:20px;
+    /* margin:10px; */
+    width:90%;
+    background-color: #393e6f;
+    border-radius: 20px;
+    color:white;
+    box-shadow: 1px 1px 4px 4px black;
+    font-weight: bold;
+}
+
+.eachNews h3{
+    text-decoration: underline;
+    color:#dbd2d2;
+}
+
+.eachNews:hover{
+    box-shadow: 1px 1px 7px 7px black;
+    position:relative;
+    top:4px;
+    left:4px;
+}
+
+
+.eachNews img{
+    width:inherit;
+    height:300px;
+    margin:0px auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px 4px #4c5f7a;
+}
+
+.eachNews a{
+    color:#aca9be;
+    text-decoration: underline;
+}
+
+.newsContents{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:90%;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding:10px;
+    margin:10px;
+}
+
+@media screen and (max-width:700px){
+    .newsContents{
+        grid-template-columns: 1fr;
+    }
+}
+
+.AppHeader{
+    color:white;
+    margin:3px auto;
+    text-align: center;
+}
+
+.App form{
+    margin-top: 20px;
+}
+
+.App form input{
+    width:70%;
+    padding:10px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 14px; 
+}
+
+.App form button{
+    padding:10px 30px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 4px;
+    border-radius: 10px;
+}

@@ -23,17 +23,25 @@ function App() {
     }
     console.log(searchString);
     const endPoint = "https://newsapi.org/v2/everything?q=" + 
-    searchString + "&from=2020-10-30&sortBy=popularity&apiKey=3373e35ea37143c6b478c8fb5e90ce43";
+    searchString + "&from=2020-11-01&sortBy=popularity&apiKey=3373e35ea37143c6b478c8fb5e90ce43";
 
     axios.get(endPoint)
-        .then(response => setNewsState(response.data.articles))
+        .then(response => {
+          // console.log(response.data);
+          if(response.data.articles.length === 0){
+            setNewsState(response.data.articles);
+            alert('No Result found. Search again differently');
+          }else{
+            setNewsState(response.data.articles)
+          }
+        })
         .catch(err => console.log(err));
   }
 
   const newsList = newsState.map(eachNews =>{
     return(
-    <div className="eachNews" style={{padding:10,margin:10,borderWidth:3}}>
-      <img src={eachNews.urlToImage} alt={"testing img"} style={{width:700,height:300}}/>
+    <div className="eachNews" key={Math.random()}>
+      <img src={eachNews.urlToImage} alt={"no image found"}/>
       <h3>{eachNews.title}</h3>
       <h4>{eachNews.description}</h4>
       <a href={eachNews.url} rel="noreferrer" target="_blank" >Click here to read more about this...</a>
@@ -42,13 +50,12 @@ function App() {
   })
   return (
     <div className="App">
-      <h2>Nimki News and Article Finder</h2>
-      <h4>Search for the latest news and articles</h4>
+      <h2 className="AppHeader">Nimki News and Article Finder</h2>
+      <h4 className="AppHeader">Search for the latest news and articles</h4>
       <form onSubmit={e => submitHandler(e)}>
         <input type="text" id="search" name="search" placeholder="Search...."/>
         <button type="submit">Search</button>
       </form>
-      <button onClick={e => console.log(newsState)}>Console log news response data</button>
       <div className="newsContents">
         {newsList}
       </div>
