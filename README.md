@@ -1,6 +1,5 @@
-[![Click here to view this project demostration](https://cdn2.iconfinder.com/data/icons/picol-vector/32/news-512.png)](https://www.youtube.com/watch?v=5VPzuGRjuuQ&ab_channel=LORDFRIEZA)
-
 https://www.youtube.com/watch?v=H5UlWyZvCPs&ab_channel=zoot106
+Click the above link to see a demo of this project.....
 
 # Getting Started with Create React App
 
