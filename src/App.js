@@ -27,7 +27,7 @@ function App() {
 
     axios.get(endPoint)
         .then(response => {
-          // console.log(response.data);
+          console.log(response);
           if(response.data.articles.length === 0){
             setNewsState(response.data.articles);
             alert('No Result found. Search again differently');
