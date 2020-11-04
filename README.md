@@ -1,4 +1,4 @@
-[![Click here to view this project demostration]()](https://www.youtube.com/watch?v=5VPzuGRjuuQ&ab_channel=LORDFRIEZA)
+[![Click here to view this project demostration](https://cdn2.iconfinder.com/data/icons/picol-vector/32/news-512.png)](https://www.youtube.com/watch?v=5VPzuGRjuuQ&ab_channel=LORDFRIEZA)
 
 
 # Getting Started with Create React App
